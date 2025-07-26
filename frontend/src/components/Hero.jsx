@@ -103,11 +103,14 @@ const Hero = () => {
 
           {/* Glitch Effect Text */}
           <div className="mb-8 relative">
-            <div className="text-cyan-400 text-lg md:text-xl font-mono animate-pulse">
+            <div className="text-cyan-400 text-lg md:text-xl font-mono animate-pulse floating">
               &gt; Securing_the_digital_world.exe
             </div>
-            <div className="text-purple-400 text-lg md:text-xl font-mono animate-pulse delay-500">
+            <div className="text-purple-400 text-lg md:text-xl font-mono animate-pulse delay-500 floating">
               &gt; Building_scalable_applications.run
+            </div>
+            <div className="text-green-400 text-lg md:text-xl font-mono animate-pulse delay-1000 floating">
+              &gt; Innovating_with_AI_tools.init
             </div>
           </div>
 
