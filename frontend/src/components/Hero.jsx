@@ -40,8 +40,8 @@ const Hero = () => {
   }, [text, currentIndex, texts]);
 
   const handleResumeClick = () => {
-    // Mock functionality - will be replaced with actual resume download
-    alert('Resume download will be implemented in backend integration');
+    // Download resume from backend
+    window.open(`${API}/resume`, '_blank');
   };
 
   const handleContactClick = () => {
