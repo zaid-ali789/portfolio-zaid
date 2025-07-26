@@ -293,18 +293,21 @@ class BackendTester:
         print("\n🌐 Testing CORS Headers...")
         
         try:
-            response = requests.options(f"{API_URL}/", timeout=10)
+            # Test CORS with a POST request that should include CORS headers
+            response = requests.post(
+                f"{API_URL}/contact",
+                json={"name": "Test", "email": "invalid"},  # Will fail validation but should have CORS headers
+                headers={"Content-Type": "application/json", "Origin": "https://example.com"},
+                timeout=10
+            )
             
-            cors_headers = {
-                'access-control-allow-origin': response.headers.get('access-control-allow-origin'),
-                'access-control-allow-methods': response.headers.get('access-control-allow-methods'),
-                'access-control-allow-headers': response.headers.get('access-control-allow-headers')
-            }
+            cors_origin = response.headers.get('access-control-allow-origin')
+            cors_credentials = response.headers.get('access-control-allow-credentials')
             
-            if cors_headers['access-control-allow-origin']:
-                self.log_result("CORS Headers", True, f"CORS properly configured: {cors_headers}")
+            if cors_origin:
+                self.log_result("CORS Headers", True, f"CORS properly configured - Origin: {cors_origin}, Credentials: {cors_credentials}")
             else:
-                self.log_result("CORS Headers", False, "CORS headers not found")
+                self.log_result("CORS Headers", False, "CORS headers not found in response")
                 
         except requests.exceptions.RequestException as e:
             self.log_result("CORS Headers", False, f"Request failed: {str(e)}")
