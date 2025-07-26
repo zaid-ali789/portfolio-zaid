@@ -91,6 +91,16 @@ const Hero = () => {
             )}
           </div>
 
+          {/* Open to Work Badge */}
+          <div className="mb-6">
+            <div className="inline-flex items-center bg-gradient-to-r from-green-500/20 to-cyan-500/20 border border-green-500/50 rounded-full px-6 py-3 backdrop-blur-sm">
+              <div className="w-3 h-3 bg-green-400 rounded-full mr-3 animate-pulse"></div>
+              <span className="text-green-400 font-mono font-bold">
+                🚀 Open to Work - Internships from Jan 2026 (up to 6 months)
+              </span>
+            </div>
+          </div>
+
           {/* Glitch Effect Text */}
           <div className="mb-8 relative">
             <div className="text-cyan-400 text-lg md:text-xl font-mono animate-pulse">
