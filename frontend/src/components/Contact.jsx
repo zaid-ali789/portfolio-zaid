@@ -134,30 +134,30 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
             
             {/* Contact Information */}
-            <div className="space-y-8">
+            <div className="space-y-6 lg:space-y-8">
               <Card className="bg-gray-800/50 border-purple-500/30 backdrop-blur-sm">
                 <CardHeader>
-                  <CardTitle className="text-2xl font-bold text-white font-mono flex items-center">
-                    <Mail className="h-6 w-6 text-cyan-400 mr-3" />
+                  <CardTitle className="text-xl lg:text-2xl font-bold text-white font-mono flex items-center">
+                    <Mail className="h-5 w-5 lg:h-6 lg:w-6 text-cyan-400 mr-3" />
                     Contact Information
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-6">
+                <CardContent className="space-y-4 lg:space-y-6">
                   {contactInfo.map((contact, index) => (
-                    <div key={index} className="flex items-center space-x-4">
-                      <div className={`${contact.color} p-3 rounded-lg bg-gray-700/50`}>
+                    <div key={index} className="flex items-center space-x-3 lg:space-x-4">
+                      <div className={`${contact.color} p-2 lg:p-3 rounded-lg bg-gray-700/50`}>
                         {contact.icon}
                       </div>
                       <div>
-                        <p className="text-gray-400 font-mono text-sm">{contact.label}</p>
+                        <p className="text-gray-400 font-mono text-xs lg:text-sm">{contact.label}</p>
                         <a
                           href={contact.href}
                           target={contact.href.startsWith('http') ? '_blank' : undefined}
                           rel={contact.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                          className={`${contact.color} font-mono hover:underline transition-colors duration-300`}
+                          className={`${contact.color} font-mono hover:underline transition-colors duration-300 text-sm lg:text-base`}
                         >
                           {contact.value}
                         </a>
