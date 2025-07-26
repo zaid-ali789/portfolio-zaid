@@ -173,7 +173,8 @@ const Contact = () => {
               <div className="bg-black/50 border border-green-500/30 rounded-lg p-4 font-mono text-sm">
                 <div className="text-green-400 mb-2">zaid@portfolio:~$ cat status.txt</div>
                 <div className="text-cyan-400">
-                  Status: Available for new opportunities<br/>
+                  Status: Available for internship opportunities<br/>
+                  Duration: January 2026 - up to 6 months<br/>
                   Interests: Full-stack development, Cybersecurity, AI/ML<br/>
                   Location: Open to remote work<br/>
                   <span className="text-green-400">Ready to innovate and collaborate!</span>
