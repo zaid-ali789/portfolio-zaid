@@ -118,7 +118,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button 
               onClick={handleResumeClick}
-              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-3 rounded-lg font-mono border border-purple-500 hover:border-purple-400 transition-all duration-300 transform hover:scale-105"
+              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-3 rounded-lg font-mono border border-purple-500 hover:border-purple-400 transition-all duration-300 transform hover:scale-105 hover-glow"
             >
               <Download className="mr-2 h-5 w-5" />
               Check My Resume
@@ -126,7 +126,7 @@ const Hero = () => {
             <Button 
               onClick={handleContactClick}
               variant="outline"
-              className="border-cyan-400 text-cyan-400 hover:bg-cyan-400/10 px-8 py-3 rounded-lg font-mono transition-all duration-300 transform hover:scale-105"
+              className="border-cyan-400 text-cyan-400 hover:bg-cyan-400/10 px-8 py-3 rounded-lg font-mono transition-all duration-300 transform hover:scale-105 hover-glow"
             >
               <Mail className="mr-2 h-5 w-5" />
               Contact Me
