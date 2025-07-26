@@ -37,12 +37,15 @@ const Certifications = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-mono">
-              <span className="text-cyan-400">&gt;</span> Certifications
+              <span className="text-cyan-400">&gt;</span> Selected Certifications
             </h2>
             <div className="h-1 w-20 bg-gradient-to-r from-purple-500 to-cyan-500 mx-auto rounded-full"></div>
             <p className="text-gray-400 mt-6 text-lg font-mono">
-              Validated expertise from leading institutions and platforms
+              Curated certifications from leading institutions and platforms
             </p>
+            <div className="mt-4 inline-flex items-center bg-purple-500/20 border border-purple-500/50 rounded-full px-4 py-2">
+              <span className="text-purple-400 font-mono text-sm">Note: These are selected from a broader certification portfolio</span>
+            </div>
           </div>
 
           {/* Certifications by Group */}
