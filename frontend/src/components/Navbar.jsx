@@ -36,7 +36,7 @@ const Navbar = () => {
   };
 
   const handleResumeClick = () => {
-    mockFormSubmission.downloadResume();
+    window.open(`${API}/resume`, '_blank');
   };
 
   return (
