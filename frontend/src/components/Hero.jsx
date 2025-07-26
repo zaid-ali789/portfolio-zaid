@@ -95,10 +95,10 @@ const Hero = () => {
           </div>
 
           {/* Open to Work Badge */}
-          <div className="mb-6">
-            <div className="inline-flex items-center bg-gradient-to-r from-green-500/20 to-cyan-500/20 border border-green-500/50 rounded-full px-6 py-3 backdrop-blur-sm">
+          <div className="mb-6 px-4">
+            <div className="inline-flex items-center bg-gradient-to-r from-green-500/20 to-cyan-500/20 border border-green-500/50 rounded-full px-4 md:px-6 py-3 backdrop-blur-sm">
               <div className="w-3 h-3 bg-green-400 rounded-full mr-3 animate-pulse"></div>
-              <span className="text-green-400 font-mono font-bold">
+              <span className="text-green-400 font-mono font-bold text-sm md:text-base">
                 🚀 Open to Work - Internships from Jan 2026 (up to 6 months)
               </span>
             </div>
