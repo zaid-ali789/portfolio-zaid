@@ -1,74 +1,74 @@
 {
-  "timestamp": "2025-07-26T16:49:32.428610",
+  "timestamp": "2025-07-26T16:50:42.608709",
   "backend_url": "https://e3a0c915-19d4-48c5-876a-e94c3fc2c37c.preview.emergentagent.com/api",
-  "passed_tests": 9,
-  "failed_tests": 2,
+  "passed_tests": 11,
+  "failed_tests": 0,
   "results": [
     {
       "test": "API Health Check",
       "passed": true,
       "message": "Status: 200, Message: Portfolio API is running",
-      "timestamp": "2025-07-26T16:49:32.036386"
+      "timestamp": "2025-07-26T16:50:42.327987"
     },
     {
       "test": "Contact Form - Valid Data",
       "passed": true,
       "message": "Success: \ud83d\ude80 Message sent successfully! I'll get back to you soon.",
-      "timestamp": "2025-07-26T16:49:32.175033"
+      "timestamp": "2025-07-26T16:50:42.414798"
     },
     {
       "test": "Contact Form - Invalid Email",
       "passed": true,
       "message": "Correctly rejected invalid email format",
-      "timestamp": "2025-07-26T16:49:32.197755"
+      "timestamp": "2025-07-26T16:50:42.441926"
     },
     {
       "test": "Contact Form - Missing Fields",
       "passed": true,
       "message": "Correctly rejected incomplete data",
-      "timestamp": "2025-07-26T16:49:32.222126"
+      "timestamp": "2025-07-26T16:50:42.459396"
     },
     {
       "test": "Contact Form - Long Inputs",
       "passed": true,
       "message": "Correctly rejected overly long inputs",
-      "timestamp": "2025-07-26T16:49:32.241392"
+      "timestamp": "2025-07-26T16:50:42.480964"
     },
     {
       "test": "Resume Download",
       "passed": true,
       "message": "PDF downloaded successfully, size: 135248 bytes",
-      "timestamp": "2025-07-26T16:49:32.273061"
+      "timestamp": "2025-07-26T16:50:42.510885"
     },
     {
       "test": "Contacts Retrieval",
-      "passed": false,
-      "message": "Status code: 500",
-      "timestamp": "2025-07-26T16:49:32.294201"
+      "passed": true,
+      "message": "Retrieved 3 contacts",
+      "timestamp": "2025-07-26T16:50:42.529519"
     },
     {
       "test": "Status Creation",
       "passed": true,
-      "message": "Created status with ID: b0f76769-ff21-41cd-809c-c456a6d9edd1",
-      "timestamp": "2025-07-26T16:49:32.327606"
+      "message": "Created status with ID: 822f51bc-eee9-4eec-bb59-299d3e97f1fe",
+      "timestamp": "2025-07-26T16:50:42.551186"
     },
     {
       "test": "Status Retrieval",
       "passed": true,
-      "message": "Retrieved 1 status checks",
-      "timestamp": "2025-07-26T16:49:32.347713"
+      "message": "Retrieved 2 status checks",
+      "timestamp": "2025-07-26T16:50:42.569558"
     },
     {
       "test": "CORS Headers",
-      "passed": false,
-      "message": "CORS headers not found",
-      "timestamp": "2025-07-26T16:49:32.405258"
+      "passed": true,
+      "message": "CORS properly configured - Origin: *, Credentials: true",
+      "timestamp": "2025-07-26T16:50:42.587651"
     },
     {
       "test": "Malformed Request Handling",
       "passed": true,
       "message": "Correctly handled malformed JSON (status: 422)",
-      "timestamp": "2025-07-26T16:49:32.428176"
+      "timestamp": "2025-07-26T16:50:42.608272"
     }
   ]
 }
