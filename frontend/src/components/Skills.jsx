@@ -41,6 +41,13 @@ const Skills = () => {
       skills: ["Adobe Photoshop", "Adobe Illustrator", "Canva", "UI/UX Design"]
     },
     {
+      title: "AI & ML Tools",
+      icon: <Database className="h-6 w-6" />,
+      color: "from-pink-500 to-purple-500",
+      borderColor: "border-pink-500/30",
+      skills: ["Prompt Engineering", "GenAI Applications", "Vertex AI", "Gemini & Streamlit", "Machine Learning"]
+    },
+    {
       title: "Development Tools",
       icon: <Wrench className="h-6 w-6" />,
       color: "from-cyan-500 to-blue-500",
