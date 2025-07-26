@@ -71,3 +71,35 @@
 .typing-cursor {
   animation: blink 1s infinite;
 }
+
+/* Enhanced hover effects */
+.hover-glow:hover {
+  box-shadow: 0 0 30px rgba(139, 92, 246, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Gradient text animation */
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.gradient-text {
+  background: linear-gradient(-45deg, #8b5cf6, #06b6d4, #10b981, #f59e0b);
+  background-size: 400% 400%;
+  animation: gradient-shift 4s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
