@@ -88,6 +88,9 @@ const About = () => {
                       <span className="text-gray-400">Focus:</span> Cybersecurity & Full-Stack Development
                     </div>
                     <div className="text-cyan-400 font-mono">
+                      <span className="text-gray-400">AI Tools:</span> Prompt Engineering, GenAI, Vertex AI
+                    </div>
+                    <div className="text-cyan-400 font-mono">
                       <span className="text-gray-400">Availability:</span> Jan 2026 - 6 months max
                     </div>
                     <div className="text-cyan-400 font-mono">
