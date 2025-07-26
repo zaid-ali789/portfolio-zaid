@@ -178,7 +178,7 @@ async def download_resume():
 @api_router.get("/contacts")
 async def get_contacts():
     try:
-        contacts = await db.contacts.find().sort("timestamp", -1).limit(50).to_list(50)
+        contacts = await db.contacts.find({}, {"_id": 0}).sort("timestamp", -1).limit(50).to_list(50)
         return {"contacts": contacts}
     except Exception as e:
         logging.error(f"Get contacts failed: {str(e)}")
