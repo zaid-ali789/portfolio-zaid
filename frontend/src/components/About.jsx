@@ -60,21 +60,21 @@ const About = () => {
             
             {/* Profile Image & Info */}
             <div className="relative">
-              <Card className="bg-gray-800/50 border-purple-500/30 backdrop-blur-sm">
+              <Card className="bg-gray-800/50 border-purple-500/30 backdrop-blur-sm hover-glow transition-all duration-300">
                 <CardContent className="p-8">
                   <div className="text-center mb-6">
-                    <div className="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden border-4 border-gradient-to-r from-purple-500 to-cyan-500 bg-gradient-to-r from-purple-500 to-cyan-500 p-1">
+                    <div className="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden border-4 border-gradient-to-r from-purple-500 to-cyan-500 bg-gradient-to-r from-purple-500 to-cyan-500 p-1 floating">
                       <img 
                         src="/assets/zaid-profile.jpeg" 
                         alt="Mohammed Zaid Ali" 
-                        className="w-full h-full object-cover rounded-full"
+                        className="w-full h-full object-cover rounded-full hover:scale-110 transition-transform duration-500"
                       />
                     </div>
-                    <h3 className="text-2xl font-bold text-white font-mono mb-2">Mohammed Zaid Ali</h3>
+                    <h3 className="text-2xl font-bold text-white font-mono mb-2 gradient-text">Mohammed Zaid Ali</h3>
                     <p className="text-purple-300 font-mono">Computer Science Engineer</p>
                     
                     {/* Open to Work Status */}
-                    <div className="mt-4 inline-flex items-center bg-green-500/20 border border-green-500/50 rounded-full px-4 py-2">
+                    <div className="mt-4 inline-flex items-center bg-green-500/20 border border-green-500/50 rounded-full px-4 py-2 hover-glow">
                       <div className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></div>
                       <span className="text-green-400 font-mono text-sm">Available for Internships</span>
                     </div>
