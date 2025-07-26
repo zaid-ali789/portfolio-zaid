@@ -154,16 +154,16 @@ const Contact = () => {
               <Card className="bg-gray-800/50 border-cyan-500/30 backdrop-blur-sm">
                 <CardContent className="p-6">
                   <h3 className="text-lg font-bold text-white font-mono mb-4">
-                    <span className="text-cyan-400">&gt;</span> Quick Stats
+                    <span className="text-cyan-400">&gt;</span> Availability Status
                   </h3>
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="text-center">
-                      <div className="text-2xl font-bold text-purple-400 font-mono">24/7</div>
-                      <div className="text-gray-400 font-mono text-sm">Response Time</div>
+                  <div className="space-y-3">
+                    <div className="flex items-center">
+                      <div className="w-3 h-3 bg-green-400 rounded-full mr-3 animate-pulse"></div>
+                      <div className="text-green-400 font-mono">Open for Internships</div>
                     </div>
-                    <div className="text-center">
-                      <div className="text-2xl font-bold text-cyan-400 font-mono">100%</div>
-                      <div className="text-gray-400 font-mono text-sm">Commitment</div>
+                    <div className="text-gray-400 font-mono text-sm">
+                      <div>Duration: January 2026 - 6 months max</div>
+                      <div>Type: Full-time internship opportunities</div>
                     </div>
                   </div>
                 </CardContent>
