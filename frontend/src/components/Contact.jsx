@@ -42,15 +42,26 @@ const Contact = () => {
       return;
     }
 
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      toast({
+        title: "Error",
+        description: "Please enter a valid email address",
+        variant: "destructive"
+      });
+      return;
+    }
+
     setIsSubmitting(true);
     
     try {
-      const result = await mockFormSubmission.submitContactForm(formData);
+      const response = await axios.post(`${API}/contact`, formData);
       
-      if (result.success) {
+      if (response.data.success) {
         toast({
           title: "Success!",
-          description: result.message,
+          description: response.data.message,
           variant: "default"
         });
         
@@ -61,11 +72,14 @@ const Contact = () => {
           subject: '',
           message: ''
         });
+      } else {
+        throw new Error(response.data.message || 'Failed to send message');
       }
     } catch (error) {
+      console.error('Contact form error:', error);
       toast({
         title: "Error",
-        description: "Failed to send message. Please try again.",
+        description: error.response?.data?.detail || "Failed to send message. Please try again.",
         variant: "destructive"
       });
     } finally {
