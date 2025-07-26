@@ -48,8 +48,12 @@ const Navbar = () => {
           
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="bg-gradient-to-r from-purple-500 to-cyan-500 p-2 rounded-lg">
-              <Code className="h-6 w-6 text-white" />
+            <div className="w-10 h-10 rounded-lg overflow-hidden bg-gradient-to-r from-purple-500 to-cyan-500 p-1">
+              <img 
+                src="/assets/za-logo.png" 
+                alt="ZA Logo" 
+                className="w-full h-full object-contain bg-black rounded-md"
+              />
             </div>
             <span className="text-xl font-bold text-white font-mono">
               Zaid<span className="text-cyan-400">.dev</span>
