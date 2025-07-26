@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './ui/button';
 import { Menu, X, Download, Code, Shield, User, Mail } from 'lucide-react';
-import { mockFormSubmission } from '../mock/mockData';
+
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const API = `${BACKEND_URL}/api`;
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
