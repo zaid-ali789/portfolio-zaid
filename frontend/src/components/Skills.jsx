@@ -133,14 +133,14 @@ const Skills = () => {
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
-                "Prompt Engineering",
-                "GenAI Applications",
                 "API Development",
                 "Database Design",
                 "Real-time Systems",
                 "Responsive Design",
                 "DevOps Basics",
-                "Project Management"
+                "Project Management",
+                "Hackathon Veteran",
+                "Technical Mentoring"
               ].map((skill, index) => (
                 <Badge
                   key={index}
