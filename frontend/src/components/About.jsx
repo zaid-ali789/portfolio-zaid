@@ -32,8 +32,13 @@ const About = () => {
     },
     {
       icon: <Zap className="h-5 w-5" />,
-      text: "Mentored 30+ Students with 90% Positive Feedback",
+      text: "Hackathon Participant - 24hr Challenges",
       color: "bg-yellow-500/20 text-yellow-300 border-yellow-500/50"
+    },
+    {
+      icon: <Zap className="h-5 w-5" />,
+      text: "Mentored 30+ Students with 90% Positive Feedback",
+      color: "bg-orange-500/20 text-orange-300 border-orange-500/50"
     }
   ];
 
