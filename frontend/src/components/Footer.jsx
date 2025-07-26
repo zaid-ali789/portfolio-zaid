@@ -51,8 +51,12 @@ const Footer = () => {
             {/* Brand Section */}
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
-                <div className="bg-gradient-to-r from-purple-500 to-cyan-500 p-2 rounded-lg">
-                  <Code className="h-6 w-6 text-white" />
+                <div className="w-12 h-12 rounded-lg overflow-hidden bg-gradient-to-r from-purple-500 to-cyan-500 p-1">
+                  <img 
+                    src="/assets/za-logo.png" 
+                    alt="ZA Logo" 
+                    className="w-full h-full object-contain bg-black rounded-md"
+                  />
                 </div>
                 <span className="text-2xl font-bold text-white font-mono">Mohammed Zaid Ali</span>
               </div>
@@ -61,7 +65,7 @@ const Footer = () => {
               </p>
               <div className="bg-black/50 border border-cyan-500/30 rounded p-3 font-mono text-xs">
                 <div className="text-cyan-400">
-                  &gt; status.current → <span className="text-green-400">AVAILABLE_FOR_OPPORTUNITIES</span>
+                  &gt; status.current → <span className="text-green-400">OPEN_FOR_INTERNSHIPS_JAN_2026</span>
                 </div>
               </div>
             </div>
