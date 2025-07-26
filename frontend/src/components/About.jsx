@@ -106,7 +106,7 @@ const About = () => {
                   </p>
                   <br />
                   <p className="text-gray-300 leading-relaxed font-mono text-lg">
-                    My journey bridges <span className="text-red-400">ethical hacking</span>, <span className="text-purple-400">cloud platforms</span>, and <span className="text-cyan-400">AI-powered development</span>.
+                    My journey bridges <span className="text-red-400">ethical hacking</span>, <span className="text-purple-400">cloud platforms</span>, and <span className="text-cyan-400">AI-powered development</span>. I've actively participated in <span className="text-yellow-400">24-hour hackathons</span> which have significantly enriched my knowledge in the tech field.
                   </p>
                 </CardContent>
               </Card>
