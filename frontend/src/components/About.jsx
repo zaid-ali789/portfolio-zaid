@@ -56,31 +56,31 @@ const About = () => {
           </div>
 
           {/* Main Content */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             
             {/* Profile Image & Info */}
-            <div className="relative">
+            <div className="relative order-2 lg:order-1">
               <Card className="bg-gray-800/50 border-purple-500/30 backdrop-blur-sm hover-glow transition-all duration-300">
-                <CardContent className="p-8">
+                <CardContent className="p-6 lg:p-8">
                   <div className="text-center mb-6">
-                    <div className="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden border-4 border-gradient-to-r from-purple-500 to-cyan-500 bg-gradient-to-r from-purple-500 to-cyan-500 p-1 floating">
+                    <div className="w-28 h-28 lg:w-32 lg:h-32 rounded-full mx-auto mb-4 overflow-hidden border-4 border-gradient-to-r from-purple-500 to-cyan-500 bg-gradient-to-r from-purple-500 to-cyan-500 p-1 floating">
                       <img 
                         src="/assets/zaid-profile.jpeg" 
                         alt="Mohammed Zaid Ali" 
                         className="w-full h-full object-cover rounded-full hover:scale-110 transition-transform duration-500"
                       />
                     </div>
-                    <h3 className="text-2xl font-bold text-white font-mono mb-2 gradient-text">Mohammed Zaid Ali</h3>
-                    <p className="text-purple-300 font-mono">Computer Science Engineer</p>
+                    <h3 className="text-xl lg:text-2xl font-bold text-white font-mono mb-2 gradient-text">Mohammed Zaid Ali</h3>
+                    <p className="text-purple-300 font-mono text-sm lg:text-base">Computer Science Engineer</p>
                     
                     {/* Open to Work Status */}
-                    <div className="mt-4 inline-flex items-center bg-green-500/20 border border-green-500/50 rounded-full px-4 py-2 hover-glow">
+                    <div className="mt-4 inline-flex items-center bg-green-500/20 border border-green-500/50 rounded-full px-3 lg:px-4 py-2 hover-glow">
                       <div className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></div>
-                      <span className="text-green-400 font-mono text-sm">Available for Internships</span>
+                      <span className="text-green-400 font-mono text-xs lg:text-sm">Available for Internships</span>
                     </div>
                   </div>
                   
-                  <div className="space-y-3 text-center">
+                  <div className="space-y-2 lg:space-y-3 text-center text-sm lg:text-base">
                     <div className="text-cyan-400 font-mono">
                       <span className="text-gray-400">Institution:</span> Adichunchanagiri Institute of Technology
                     </div>
@@ -102,18 +102,18 @@ const About = () => {
             </div>
 
             {/* Description */}
-            <div className="space-y-6">
+            <div className="space-y-6 order-1 lg:order-2">
               <Card className="bg-gray-800/50 border-cyan-500/30 backdrop-blur-sm">
-                <CardContent className="p-6">
-                  <p className="text-gray-300 leading-relaxed font-mono text-lg">
+                <CardContent className="p-4 lg:p-6">
+                  <p className="text-gray-300 leading-relaxed font-mono text-base lg:text-lg">
                     I'm a <span className="text-cyan-400">Computer Science undergrad</span> and <span className="text-purple-400">cybersecurity enthusiast</span> with a passion for securing and scaling full-stack web applications. 
                   </p>
                   <br />
-                  <p className="text-gray-300 leading-relaxed font-mono text-lg">
+                  <p className="text-gray-300 leading-relaxed font-mono text-base lg:text-lg">
                     As the <span className="text-yellow-400">founder of Zenith Adept</span>, I've designed and delivered tech courses, mentored 30+ students, and built scalable apps with <span className="text-green-400">MERN</span> and <span className="text-blue-400">Flask</span>.
                   </p>
                   <br />
-                  <p className="text-gray-300 leading-relaxed font-mono text-lg">
+                  <p className="text-gray-300 leading-relaxed font-mono text-base lg:text-lg">
                     My journey bridges <span className="text-red-400">ethical hacking</span>, <span className="text-purple-400">cloud platforms</span>, and <span className="text-cyan-400">AI-powered development</span>. I've actively participated in <span className="text-yellow-400">24-hour hackathons</span> which have significantly enriched my knowledge in the tech field.
                   </p>
                 </CardContent>
